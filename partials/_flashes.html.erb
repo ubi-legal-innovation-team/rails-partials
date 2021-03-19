@@ -1,0 +1,12 @@
+<% if notice %>
+  <div id="notice">
+    <span><%= svg('ubisoft_check_20') %></span>
+    <p><%= notice %></p>
+  </div>
+<% elsif alert %>
+  <div id="alert">
+    <span><%= svg('ubisoft_warning_red_20') %></span>
+    <p><%= alert %></p>
+    <div class="close"><%= svg('ubisoft_cross_15') %></div>
+  </div>
+<% end %>

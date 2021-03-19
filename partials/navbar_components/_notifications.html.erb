@@ -1,0 +1,23 @@
+<div class="open-dropdown" id="user_notifications">
+  <%= svg('bell_white') %>
+  <span id="notifications_count" class="red">1</span>
+
+  <div class="dropdown-toggled w-350 left user_notifications">
+    <ul class="no-padding unstyle-list" id="notifications">
+
+      <!-- if notification nil -->
+      <!-- <li id="empty_notifications">NOTHING TO DISPLAY</li> -->
+
+      <!-- if notification is not nil -->
+      <li class="p-tall strong">earlier</li>
+      <li class="notification">
+        <div class="flex-col-start w-max">
+          <a rel="nofollow" data-method="patch" href="/">Ubisoft followed you</a>
+          <span class="text-grey p-small ml-05">10 min ago</span>
+        </div>
+        <!-- if notification is not read yet -->
+        <div class="flex-cent ml-05"><span class="unread"></span></div>
+      </li>
+    </ul>
+  </div>
+</div>

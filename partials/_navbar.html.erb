@@ -1,0 +1,56 @@
+<% if params["controller"].include?('sessions') %>
+
+  <nav id="legallab-navbar" class="flex-bet-cent">
+    <div class="legallab-logo">
+      <span><%= svg('ubisoft_white') %></span>
+
+      <div class="flex-col-start">
+        <strong>UBISOFT</strong>
+        <span>[Platform name]</span>
+      </div>
+    </div>
+  </nav>
+
+<% else %>
+
+  <!-- Uncomment by replacing true with user_signed_in? helper when devise is installed -->
+
+  <% if true #user_signed_in? %>
+
+      <nav id="legallab-navbar" class="flex-bet-cent">
+        <%= link_to home_path do %>
+          <div class="legallab-logo">
+            <%= svg('ubisoft_white') %>
+            <div class="flex-col-start">
+              <strong>UBISOFT</strong>
+              <span>[Platform name]</span>
+            </div>
+          </div>
+        <% end %>
+
+        <%#= render "shared/navbar_components/menu" %>
+
+        <div class="flex-cent">
+          <!-- Generate ActionCable to use the notifications system -->
+          <%#= render "shared/navbar_components/notifications" %>
+          <%= render "shared/navbar_components/user_nav" %>
+        </div>
+
+      </nav>
+
+  <% else %>
+
+    <nav id="legallab-navbar" class="flex-bet-cent">
+      <div class="legallab-logo">
+        <%= svg('ubisoft_white') %>
+
+        <div class="flex-col-start">
+          <strong>UBISOFT</strong>
+          <span>[Platform name]</span>
+        </div>
+      </div>
+    </nav>
+
+  <% end %>
+
+<% end %>
