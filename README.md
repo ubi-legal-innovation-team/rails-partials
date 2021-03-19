@@ -9,12 +9,12 @@ rails new APP_NAME
 Add Rails' default partials:
 
 ```
-curl -L https://raw.githubusercontent.com/ubi-legal-innovation-team/rails-pages/master/partials/_flashes.html.erb > app/views/shared/_flashes.html.erb
-curl -L https://raw.githubusercontent.com/ubi-legal-innovation-team/rails-pages/master/partials/_footer.html.erb > app/views/shared/_footer.html.erb
-curl -L https://raw.githubusercontent.com/ubi-legal-innovation-team/rails-pages/master/partials/_navbar.html.erb > app/views/shared/_navbar.html.erb
-curl -L https://raw.githubusercontent.com/ubi-legal-innovation-team/rails-pages/master/partials/navbar_components/_menu.html.erb > app/views/shared/navbar_components/_menu.html.erb
-curl -L https://raw.githubusercontent.com/ubi-legal-innovation-team/rails-pages/master/partials/navbar_components/_notifications.html.erb > app/views/shared/navbar_components/_notifications.html.erb
-curl -L https://raw.githubusercontent.com/ubi-legal-innovation-team/rails-pages/master/partials/navbar_components/_user_nav.html.erb > app/views/shared/navbar_components/_user_nav.html.erb
+curl -L https://raw.githubusercontent.com/ubi-legal-innovation-team/rails-partials/master/partials/_flashes.html.erb > app/views/shared/_flashes.html.erb
+curl -L https://raw.githubusercontent.com/ubi-legal-innovation-team/rails-partials/master/partials/_footer.html.erb > app/views/shared/_footer.html.erb
+curl -L https://raw.githubusercontent.com/ubi-legal-innovation-team/rails-partials/master/partials/_navbar.html.erb > app/views/shared/_navbar.html.erb
+curl -L https://raw.githubusercontent.com/ubi-legal-innovation-team/rails-partials/master/partials/navbar_components/_menu.html.erb > app/views/shared/navbar_components/_menu.html.erb
+curl -L https://raw.githubusercontent.com/ubi-legal-innovation-team/rails-partials/master/partials/navbar_components/_notifications.html.erb > app/views/shared/navbar_components/_notifications.html.erb
+curl -L https://raw.githubusercontent.com/ubi-legal-innovation-team/rails-partials/master/partials/navbar_components/_user_nav.html.erb > app/views/shared/navbar_components/_user_nav.html.erb
 ```
 
 **On Ubuntu/Windows**: if the `unzip` command returns an error, please install it first by running `sudo apt install unzip`.
