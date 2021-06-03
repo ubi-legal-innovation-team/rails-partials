@@ -1,12 +1,9 @@
-<div class="open-dropdown" id="user_nav">
-  <%= svg('ubisoft_user_white') %>
+<%= form_tag user_nav_call_path, method: :get, id: "user_nav_call", class: "relative" do %>
 
-  <div class="dropdown-toggled w-250 left user_nav">
-    <ul class="no-padding unstyle-list">
-      <li class="text-cent flex-cent">
-        <span class="svg"><%= svg('YOUR_SVG') %></span>
-        <%= link_to "to home", home_path, class: "text-left" %>
-      </li>
-    </ul>
-  </div>
-</div>
+  <%= button_tag :submit, class: "no-background p-0" do %>
+    <%= svg('ubisoft_user_white') %>
+  <% end %>
+
+  <div class="dropdown-ajaxified user_nav_call"><!-- AJAX USER NAV CALL --></div>
+
+<% end %>

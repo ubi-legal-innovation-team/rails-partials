@@ -1,8 +1,18 @@
 <footer id="legallab-footer">
   <%= link_to root_path do %>
-    <div class="legallab-logo">
+    <div class="legallab-logo m-auto">
       <%= svg('ubisoft_white') %>
       <strong>UBISOFT</strong>
     </div>
   <% end %>
+
+  <div class="legallab-footer-contact flex-cent">
+    <%= form_tag modal_example_modal_call_path, method: :get, id: "modal_example_call",
+                                                     class: "modal-call" do %>
+
+      <%= button_tag "modal example", class: "no-background p-0 ajax-call" %>
+
+    <% end %>
+  </div>
+
 </footer>
