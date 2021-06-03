@@ -15,6 +15,9 @@ curl -L https://raw.githubusercontent.com/ubi-legal-innovation-team/rails-partia
 curl -L https://raw.githubusercontent.com/ubi-legal-innovation-team/rails-partials/master/partials/navbar_components/_menu.html.erb > app/views/shared/navbar_components/_menu.html.erb
 curl -L https://raw.githubusercontent.com/ubi-legal-innovation-team/rails-partials/master/partials/navbar_components/_notifications.html.erb > app/views/shared/navbar_components/_notifications.html.erb
 curl -L https://raw.githubusercontent.com/ubi-legal-innovation-team/rails-partials/master/partials/navbar_components/_user_nav.html.erb > app/views/shared/navbar_components/_user_nav.html.erb
+curl -L https://raw.githubusercontent.com/ubi-legal-innovation-team/rails-partials/master/partials/ajax/ajax_calls/_user_nav.html.erb > app/views/ajax/ajax_calls/_user_nav.html.erb
+curl -L https://raw.githubusercontent.com/ubi-legal-innovation-team/rails-partials/master/partials/ajax/ajax_calls/_notifications.html.erb > app/views/ajax/ajax_calls/_notifications.html.erb
+curl -L https://raw.githubusercontent.com/ubi-legal-innovation-team/rails-partials/master/partials/ajax/ajax_calls/modals/_example.html.erb > app/views/ajax/ajax_calls/modals/_example.html.erb
 ```
 
 **On Ubuntu/Windows**: if the `unzip` command returns an error, please install it first by running `sudo apt install unzip`.
