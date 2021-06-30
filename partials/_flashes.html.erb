@@ -1,12 +1,20 @@
 <% if notice %>
+
   <div id="notice" class="break-word">
+
     <span><%= svg('ubisoft_check_20') %></span>
     <p><%= notice %></p>
+
   </div>
+
 <% elsif alert %>
+
   <div id="alert" class="break-word">
+
     <span><%= svg('ubisoft_warning_red_20') %></span>
     <p><%= alert %></p>
     <div class="close"><%= svg('filled_cross_red_20') %></div>
+
   </div>
+
 <% end %>
