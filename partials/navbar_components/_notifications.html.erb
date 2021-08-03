@@ -1,4 +1,4 @@
-<%= form_tag notifications_call_path, method: :get, id: "user_notifications_call", class: "relative" do %>
+<%= form_tag notifications_call_path, method: :get, id: "user_notifications_call", class: "dropdown-call relative" do %>
 
   <%= button_tag :submit, class: "no-background p-0" do %>
     <%= svg('bell_white') %>
@@ -9,7 +9,5 @@
       <%#= Notification.user(current_user.id).recent.unview.count %>
     </span>
   <%# end %> -->
-
-  <div class="dropdown-ajaxified user_notifications_call"><!-- AJAX NOTIFICATIONS CALL --></div>
 
 <% end %>

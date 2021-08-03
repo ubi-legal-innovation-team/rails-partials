@@ -17,7 +17,7 @@
 
   <% if true #user_signed_in? %>
 
-      <nav id="legallab-navbar" class="flex-bet-cent">
+      <nav id="legallab-navbar" class="flex-bet-cent relative">
         <%= link_to home_path do %>
           <div class="legallab-logo">
             <%= svg('ubisoft_white') %>
@@ -36,6 +36,8 @@
           <%#= render "shared/navbar_components/responsive/menu" %>
           <%= render "shared/navbar_components/user_nav" %>
         </div>
+
+        <div id="dropdown_ajaxified"><!-- AJAX DROPDOWN CALL --></div>
 
       </nav>
 

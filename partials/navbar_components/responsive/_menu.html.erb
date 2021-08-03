@@ -1,9 +1,7 @@
-<%= form_tag menu_responsive_call_path, method: :get, id: "menu_responsive_call", class: "relative hidden" do %>
+<%= form_tag menu_responsive_call_path, method: :get, id: "menu_responsive_call", class: "dropdown-call hidden" do %>
 
   <%= button_tag :submit, class: "no-background p-0" do %>
     <%= svg('hamburger_menu_white') %>
   <% end %>
-
-  <div class="dropdown-ajaxified menu_responsive_call"><!-- AJAX MENU RESPONSIVE CALL --></div>
 
 <% end %>
